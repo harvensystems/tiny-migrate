@@ -1,0 +1,4 @@
+org.harvensystems.tinymigrate.TinyMigrateAutoConfiguration
+org.harvensystems.tinymigrate.TinyMigrateReactiveAutoConfiguration
+org.harvensystems.tinymigrate.reactive.ReactiveMongoStorage
+org.harvensystems.tinymigrate.MongoStorage
