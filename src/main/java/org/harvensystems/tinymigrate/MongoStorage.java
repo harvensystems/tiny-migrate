@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.query.Query;
 
 import java.time.Duration;
 
-@ConditionalOnClass(MongoTemplate.class)
+@ConditionalOnBean(MongoTemplate.class)
 public class MongoStorage implements MigrationStorage, DistributedLockManager {
     final Logger logger = LoggerFactory.getLogger(MongoStorage.class);
     final MongoTemplate mongoTemplate;
