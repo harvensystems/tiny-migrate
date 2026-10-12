@@ -175,6 +175,12 @@ public class DatabaseMigrationsConfiguration {
             }
         };
     }
+
+    // Or use the static factory helper method
+    @Bean
+    public MigrationStep removeAllUserSessions(SessionRepository sessionRepository) {
+        return MigrationStep.create("20261012_03_remove_all_user_sessions", () -> sessionRepository.clear().then());
+    }
 }
 ```
 
