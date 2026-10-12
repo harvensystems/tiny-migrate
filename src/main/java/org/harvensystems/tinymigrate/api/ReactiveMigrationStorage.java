@@ -1,9 +1,9 @@
-package org.harvensystems.tinymigrate.reactive;
+package org.harvensystems.tinymigrate.api;
 
 import org.harvensystems.tinymigrate.MigrationLog;
 import reactor.core.publisher.Mono;
 
 public interface ReactiveMigrationStorage {
     Mono<Boolean> isExecuted(String id);
-    Mono<Void> markExecuted(MigrationLog log);
+    Mono<Void> saveLog(MigrationLog log);
 }

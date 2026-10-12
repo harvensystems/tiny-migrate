@@ -1,4 +1,4 @@
-package org.harvensystems.tinymigrate.reactive;
+package org.harvensystems.tinymigrate.api;
 
 import reactor.core.publisher.Mono;
 
